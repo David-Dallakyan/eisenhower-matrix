@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="matrix">
+    <div class="header">Eisenhower matrix</div>
+    <div class="row">
+        <div id="urgent-important" class="cell urgent-important" onclick="selectCell(this)">
+            <p>Urgent & important</p>
+        </div>
+        <div id="important-not-urgent" class="cell important-not-urgent" onclick="selectCell(this)">
+            <p>Important not Urgent</p>
+        </div>
+    </div>
+    <div class="row">
+        <div id="urgent-not-important" class="cell urgent-not-important" onclick="selectCell(this)">
+            <p>Urgent not Important</p>
+        </div>
+        <div id="not-important-not-urgent" class="cell not-important-not-urgent" onclick="selectCell(this)">
+            <p>Not Urgent not Important</p>
+        </div>
+    </div>
+    <div class="row">
+        <input type="text" id="task" placeholder="Enter task here">
+        <button onclick="addTask()">Add Task</button>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
